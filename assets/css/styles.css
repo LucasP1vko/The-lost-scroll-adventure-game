@@ -22,19 +22,14 @@ body {
     max-width: 100%;
     border: none;
     background: url('../images/parchment_resized.jpg') no-repeat top;
-    background-size: 100vw 100vh;
+    background-size: 95vw 100vh;
     padding: 100px 10%;
     margin: 0;
     display: flex;
     justify-content: center;
 }
-}
 
-.game-field {
-    display: flex;
 
-    border: 10px solid #000;
-}
 
 .options-field {
     display: grid;
