@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Dancing+Script:wght@600&family=Montez&family=Share+Tech+Mono&display=swap');
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Montez;
+}
+
+body {
+    display: flex;
+    font-size: 2.5rem;
+    font-weight: bold;
+
+}
+
+
+
+.scroll-container {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    border: none;
+    background: url('../images/parchment_resized.jpg') no-repeat top;
+    background-size: 100vw 100vh;
+    padding: 100px 10%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    }
+}
+
+.story-field {
+    display: flex;
+
+    border: 10px solid #000;
+}
+
+.options-field {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 5%;
+    margin-top: 20px;
+}   
+
+.opt-btn {
+    background: none;
+    text-decoration: none;
+    border: 1px solid;
+    font-weight: bold;
+    font-size: 2.6rem;
+
+  }
+  
+  .opt-btn:hover {
+    background: #fffd90;
+    text-decoration: none;
+    border-color: #fffd90;
+  }
+
+
+
+@media screen and (max-width:1024px) {
+
+    .opt-btn {
+        font-size: 1.6rem;
+    }
+
+      .scroll-container {
+        padding: 120px 10%;
+    }
+
+      body {
+        font-size: 1.6rem;    
+    }
+
+}
+
+@media screen and (max-width:425px) {
+
+    .opt-btn {
+        font-size: 1.1rem;
+    }
+
+      .scroll-container {
+        padding: 100px 10%;
+    }
+
+      body {
+        font-size: 1.13rem;    
+    }
+
+    .options-field {
+        grid-template-columns: repeat(1, auto);
+        gap: 5%;
+    }   
+
+  }
