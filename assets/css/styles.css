@@ -29,6 +29,12 @@ body {
     justify-content: center;
 }
 
+.story-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
 
 
 .options-field {
