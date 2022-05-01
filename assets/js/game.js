@@ -1,16 +1,27 @@
 let storyQuestionElement = document.getElementById('story-question-text');
-// let optionButtonsElements = document.getElementById('options-buttons');
+optionButtonsElements = document.getElementById('options-buttons');
 
 
 function startGame() {
 showNextQuestion(0);
 }
 
-// function displaying next question and answers
+// function displaying next question and removing old answers
 function showNextQuestion(nextQuestion) {
+
+// selectiong question by its id and displaying its text
 let question = questionIndex.find(question => question.id === nextQuestion)
 storyQuestionElement.innerHTML = question.text
+
+// removing all existing options buttons before generating new ones
+while (optionButtonsElements.firstChild) {
+    optionButtonsElements.removeChild(optionButtonsElements.firstChild)
+    showNextAnswer(nextQuestion)
 }
+
+
+}
+
 
 // event listener for which option was chosed 
 // function selectOption(option) {
