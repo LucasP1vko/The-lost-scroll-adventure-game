@@ -42,9 +42,12 @@ body {
     grid-template-columns: repeat(2, auto);
     gap: 5%;
     margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+
 }
 
-.opt-btn {
+.btn {
     background: none;
     text-decoration: none;
     border: 1px solid;
@@ -53,7 +56,7 @@ body {
 
 }
 
-.opt-btn:hover {
+.btn:hover {
     background: #fffd90;
     text-decoration: none;
     border-color: #fffd90;
@@ -63,7 +66,7 @@ body {
 
 @media screen and (max-width:1024px) {
 
-    .opt-btn {
+    .btn {
         font-size: 1.6rem;
     }
 
@@ -79,7 +82,7 @@ body {
 
 @media screen and (max-width:425px) {
 
-    .opt-btn {
+    .btn {
         font-size: 1.1rem;
     }
 
